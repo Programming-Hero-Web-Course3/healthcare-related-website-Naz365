@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "img": "https://images.unsplash.com/photo-1632053652571-a6a45052bbbd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80" ,
+    "title": "Counseling hours with the Doctors"
+  },
+  {
+    "id": 2,
+    "img": "https://d3b6u46udi9ohd.cloudfront.net/wp-content/uploads/2019/04/12102157/Telemedicine-Feature-2-1.png",
+    "title": "Meet the Online Doctor (member only)"
+    
+  },
+
+  {
+    "id": 3,
+    "img": "https://pathwaysreallife.com/wp-content/uploads/Group-meeting-counseling-happy.jpg",
+    "title": "Counseling on Mental Health"
+    
+  },
+  {
+    "id": 4,
+    "img": "https://images.unsplash.com/photo-1618961734760-466979ce35b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80",
+    "title": "COVID-19 Vaccine"
+    
+  },
+  {
+    "id": 5,
+    "img": "https://image.freepik.com/free-photo/mother-with-little-son-glasses-store_1157-23054.jpg",
+    "title": "Eyes check up"
+    
+  },
+  {
+    "id": 6,
+    "img": "https://image.freepik.com/free-photo/medicine-bottles-home-medical-kit_1387-113.jpg",
+    "title": "First Aid"
+    
+  }
+  
+]
