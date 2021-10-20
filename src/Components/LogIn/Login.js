@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { FcGoogle } from "react-icons/fc";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import LoginImg from "../img/LogIn.jpg";
@@ -70,6 +71,10 @@ const Login = () => {
               {" "}
               <strong>or SignUp with Google</strong>{" "}
             </p>
+            <p>
+              New on Here?
+           <Link to="/signup">Register Now</Link>{" "}
+        </p>
             <div className="d-grid gap-2">
               <Button variant="dark" size="lg" onClick={handleGoogleLogIn}>
                 <FcGoogle /> SignUp
