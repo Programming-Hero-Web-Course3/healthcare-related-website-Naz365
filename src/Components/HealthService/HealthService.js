@@ -50,7 +50,7 @@ const HealthService = (props) => {
         
             </Card.Text>
             <div className="d-grid gap-2">
-              <Link 
+              <Link className="btn btn-primary"
               variant="primary" 
               size="lg"
               to= {url}

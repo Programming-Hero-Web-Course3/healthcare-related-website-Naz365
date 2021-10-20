@@ -2,6 +2,9 @@
 /*======================
     404 page
 =======================*/
+.div_h{
+  height: 100vh;
+}
 .error_body {
     margin:0;
     font-family:sans-serif;

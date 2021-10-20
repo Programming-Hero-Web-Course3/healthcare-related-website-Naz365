@@ -12,6 +12,8 @@ import SignUp from "./Components/SingUp/SignUp";
 import AllServices from "./Components/AllServices/AllServices";
 import FAQ from "./Components/FAQ/FAQ";
 import AuthProvider from "./Context/AuthProvider";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+// import AuthProvider from "./Context/AuthProvider";
 
 
 function App() {
@@ -35,9 +37,9 @@ function App() {
           <Route path="/signup">
             <SignUp></SignUp>
           </Route>
-          <Route path="/allservice/:serviceId">
+          <PrivateRoute path="/allservice/:serviceId">
             <AllServices></AllServices>
-          </Route>
+          </PrivateRoute>
           <Route path="/FAQ">
             <FAQ></FAQ>
           </Route>
@@ -50,6 +52,8 @@ function App() {
         </Switch>
         <Footer></Footer>
       </Router>
+
+
       </AuthProvider>
     </div>
   );

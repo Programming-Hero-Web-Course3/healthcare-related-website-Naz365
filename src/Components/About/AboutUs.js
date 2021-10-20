@@ -2,12 +2,12 @@ import React from "react";
 import aboutUsImg from "../img/4136933.jpg"
 const AboutUs = () => {
   return (
-    <div className="container">
+    <div className="container"  >
 
     <div >
         <img className="img-fluid " src={aboutUsImg} alt="" srcset="" />
     </div>
-      <div style={{ height: "100vh" }}>
+      <div >
         <h2>About Us</h2>
         <h5>The need for Naz's health care</h5>
         <p>

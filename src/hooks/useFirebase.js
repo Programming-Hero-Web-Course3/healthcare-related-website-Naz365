@@ -9,8 +9,9 @@ import {
     updateProfile,
   } from "firebase/auth";
   import { useEffect, useState } from "react";
-  import initializeAuthentication from "../Firebase/firebase.init";
-  initializeAuthentication();
+import firebaseAuthInit from "../Firebase/Firebase.init";
+  
+  firebaseAuthInit();
   const useFirebase = () => {
     const auth = getAuth();
     const [user, setUser] = useState({});

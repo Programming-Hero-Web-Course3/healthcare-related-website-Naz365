@@ -6,7 +6,7 @@ const FAQ = () => {
     <div className="container">
         <br /><br /><br /><br /><br />
       <div className="row">
-      <div className="col">
+      <div className="col-md-6">
         <div className="accordion" id="accordionPanelsStayOpenExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="panelsStayOpen-headingOne">
@@ -100,7 +100,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-      <div className="col">
+      <div className="col-md-6">
         <img className="img-fluid" src={faqImg} alt="" srcset="" />
       </div>
       </div>

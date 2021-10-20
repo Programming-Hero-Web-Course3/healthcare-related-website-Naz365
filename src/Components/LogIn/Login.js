@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Form, Button } from "react-bootstrap";
-import LoginImg from "../img/LogIn.jpg";
+import { Button, Form } from "react-bootstrap";
+import { FcGoogle } from "react-icons/fc";
 // import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import { FcGoogle } from "react-icons/fc";
+import LoginImg from "../img/LogIn.jpg";
 // import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
@@ -33,13 +33,13 @@ const Login = () => {
 
     // </div>
 
-    <div className="container mt-5 p-5" style={{ height: "100vh" }}>
-      <h1 className="text-center m-4 p-4">Please Log in</h1>
+    <div className="container" style={{ height: "70vh" }}>
+      <h1 className="text-center mt-5">Please Log in</h1>
       <div class="row">
-        <div class="col">
+        <div class="col-md-6">
           <img className="img-fluid" src={LoginImg} alt="" srcset="" />
         </div>
-        <div class="col">
+        <div class="col-md-6">
           <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
@@ -65,23 +65,21 @@ const Login = () => {
             <Button variant="primary" type="submit" onClick={handleLogIn}>
               Submit
             </Button>
-            
 
             <p className="text-center">
-                {" "}
-                <strong>or SignUp with Google</strong>{" "}
-              </p>
-              <div className="d-grid gap-2">
-                <Button variant="dark" size="lg" onClick={handleGoogleLogIn}>
-                  <FcGoogle /> SignUp
-                </Button>
-              </div>
-            
+              {" "}
+              <strong>or SignUp with Google</strong>{" "}
+            </p>
+            <div className="d-grid gap-2">
+              <Button variant="dark" size="lg" onClick={handleGoogleLogIn}>
+                <FcGoogle /> SignUp
+              </Button>
+            </div>
+
             <br />
             <Form.Text className="text-muted text-center">
               <p>We'll never share your information with anyone else.</p>
             </Form.Text>
-
           </Form>
         </div>
       </div>
