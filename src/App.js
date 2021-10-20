@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
+import NotFound from "./Components/NotFound/NotFound";
 
 import Login from "./Components/LogIn/Login";
 import AboutUs from "./Components/About/AboutUs";
@@ -10,11 +11,13 @@ import Footer from "./Components/Header/Footer";
 import SignUp from "./Components/SingUp/SignUp";
 import AllServices from "./Components/AllServices/AllServices";
 import FAQ from "./Components/FAQ/FAQ";
-import notFound from "./Components/NotFound/notFound";
+import AuthProvider from "./Context/AuthProvider";
+
 
 function App() {
   return (
     <div className="app">
+      <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
@@ -23,13 +26,13 @@ function App() {
             <Home></Home>
           </Route>
           
-          <Route path="/singup">
+          <Route path="/login">
             <Login></Login>
           </Route>
           <Route path="/about-us">
             <AboutUs></AboutUs>
           </Route>
-          <Route path="/signin">
+          <Route path="/signup">
             <SignUp></SignUp>
           </Route>
           <Route path="/allservice/:serviceId">
@@ -42,11 +45,12 @@ function App() {
           <Home></Home>
           </Route>
           <Route path="*">
-            <notFound></notFound>
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>
       </Router>
+      </AuthProvider>
     </div>
   );
 }
